@@ -63,14 +63,16 @@ export default function WorkExperience() {
                   <Briefcase className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Full Stack Developer</h3>
+                  <h3 className="text-xl font-bold">
+                    Digital Marketing, SEO Specialist & Social Media Manager
+                  </h3>
                   <p className="text-sm text-primary font-medium">
-                    Zectagon Technology
+                    AMSAROVENTURE
                   </p>
                 </div>
               </div>
               <span className="px-3 py-1 text-xs font-medium glass rounded-full text-muted-foreground">
-                Dec 2023 - Present
+                2018 - 2021 | On Site
               </span>
             </div>
 
@@ -78,15 +80,32 @@ export default function WorkExperience() {
               <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
                 <Users className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>
-                  Led a team of 5 Engineers to develop a scalable e-commerce
-                  platform using React and Node.js.
+                  Conducted keyword research and competitor analysis to optimize
+                  Amazon listings, improving organic visibility by 30%.
                 </span>
               </li>
+
               <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
                 <Code2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>
-                  Modernized legacy codebase using Next.js, resulting in 40%
-                  faster page loads.
+                  Executed SEO strategies for multiple platforms, increasing
+                  website traffic and rankings.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Rocket className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Managed social media channels, implementing content strategies
+                  that boosted engagement and brand awareness.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Zap className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Created data-driven marketing campaigns, leveraging analytics
+                  to maximize ROI.
                 </span>
               </li>
             </ul>
@@ -106,14 +125,14 @@ export default function WorkExperience() {
                   <Rocket className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Frontend Engineer</h3>
+                  <h3 className="text-xl font-bold">Amazon Account Manager</h3>
                   <p className="text-sm text-primary font-medium">
-                    Digital Solutions Inc.
+                    JANISRAMONE UK, HAMISHKANE UK
                   </p>
                 </div>
               </div>
               <span className="px-3 py-1 text-xs font-medium glass rounded-full text-muted-foreground">
-                Jan 2022 - Nov 2023
+                2023 - 2024 | Remotely UK
               </span>
             </div>
 
@@ -121,16 +140,32 @@ export default function WorkExperience() {
               <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
                 <Layout className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>
-                  Designed and implemented over 20+ responsive web components
-                  using Tailwind CSS.
+                  Optimized Old Listings, Create New Listings, Find some best
+                  Selling Products and Boost Sales.
                 </span>
               </li>
+
               <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
                 <Zap className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>
-                  Optimized application performance reducing First Contentful
-                  Paint by 0.5s.
+                  Create Amazon PPC, Optimized PPC, Daily Analysis, Bid
+                  Optimization, Performance Monitoring.
                 </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Code2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>Amazon Brand Store Design and Published.</span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Users className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>A+ Content Design and Published.</span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Database className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>Html Description Write with Seo friendly Keywords.</span>
               </li>
             </ul>
           </div>
@@ -149,30 +184,138 @@ export default function WorkExperience() {
                   <Code2 className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Junior Web Developer</h3>
+                  <h3 className="text-xl font-bold">E-commerce Manager</h3>
                   <p className="text-sm text-primary font-medium">
-                    StartUp Hub
+                    ZECTAGON TECHNOLOGIES
                   </p>
                 </div>
               </div>
               <span className="px-3 py-1 text-xs font-medium glass rounded-full text-muted-foreground">
-                June 2021 - Dec 2021
+                2021 - Present | On Site
               </span>
             </div>
 
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
-                <Database className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <Users className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>
-                  Assisted in the migration of data from MySQL to MongoDB for
-                  improved performance.
+                  Managed inventory across Amazon ensuring product availability
+                  and smooth fulfillment operations.
                 </span>
               </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Code2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Created and optimized compelling product listings, enhancing
+                  visibility and increasing conversion rates.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Rocket className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Developed and executed Amazon PPC campaigns, reducing ACoS and
+                  boosting sales.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Zap className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Analyzed sales performance and marketplace metrics,
+                  identifying opportunities for growth and refining strategies.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Layout className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Optimized eBay listings using SEO-rich content and compelling
+                  visuals to boost visibility and sales.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Database className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Managed pricing, promotions, and customer inquiries to enhance
+                  buyer experience and drive positive feedback.
+                </span>
+              </li>
+
               <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
                 <Users className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span>
-                  Collaborated with senior developers to fix 50+ critical bugs
-                  across the platform.
+                  Built and customized Shopify stores, integrating apps for
+                  advanced functionality.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Code2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Developed and executed promotional campaigns, resulting in
+                  increased site traffic and customer retention.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Experience 4 */}
+        <div className="exp-card relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-foreground/10 bg-background group-hover:border-primary/50 transition-colors duration-500 z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+            <Circle className="w-2 h-2 fill-primary text-primary" />
+          </div>
+
+          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 glass-dark rounded-3xl border border-foreground/5 hover:border-primary/20 transition-all duration-500">
+            <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+              <div className="flex items-center gap-3">
+                <div className="p-2 glass rounded-xl text-primary">
+                  <Briefcase className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">
+                    Amazon, eBay, Temu Account Manager
+                  </h3>
+                </div>
+              </div>
+              <span className="px-3 py-1 text-xs font-medium glass rounded-full text-muted-foreground">
+                2024 - Present | Remotely, UK
+              </span>
+            </div>
+
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Users className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Managed inventory across Amazon ensuring product availability
+                  and smooth fulfillment operations.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Rocket className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Developed and executed Amazon PPC campaigns, reducing AcoS and
+                  boosting sales.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Code2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Create Best Quality Listings On ebay with Html Product
+                  Description and Ensure the Quality of image and Product.
+                </span>
+              </li>
+
+              <li className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                <Zap className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <span>
+                  Continuously Optimized the campaign and Creating Strategies
+                  for Getting More Sales.
                 </span>
               </li>
             </ul>

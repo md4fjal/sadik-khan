@@ -9,15 +9,17 @@ export default function AboutDetail() {
         <div className="space-y-8">
           <div>
             <h2 className="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Engineering{" "}
-              <span className="text-gradient">Digital Experiences</span>
+              About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-center md:text-left text-lg leading-relaxed">
-              I am a passionate Full Stack Developer with a deep-seated love for
-              creating elegant solutions to complex problems. With over 3 years
-              of experience in the digital landscape, I specialize in building
-              robust, scalable applications that prioritize user experience and
-              performance.
+              I am a passionate E-commerce Manager with over 5 years of
+              experience in managing and optimizing online marketplaces such as
+              Amazon, Etsy, Ebay and Shopify. Best Understanding of Growing
+              Faster In E-com Industry. Skilled in leveraging data analytics to
+              drive sales, monitor competitive pricing, and improve conversion
+              rates. Deep Understanding in compliance with marketplace
+              guidelines and implementing promotional strategies for sustained
+              growth.
             </p>
           </div>
 
@@ -26,27 +28,29 @@ export default function AboutDetail() {
               <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
                 <Code className="w-5 h-5" />
               </div>
-              <h4 className="font-bold mb-1">Clean Code</h4>
+              <h4 className="font-bold mb-1">Modern Tools</h4>
               <p className="text-sm text-muted-foreground">
-                Writing maintainable and efficient codebases.
+                Helium 10, Jungle Scout, eRank, Everbee
               </p>
             </div>
             <div className="p-6 glass-dark rounded-2xl border border-foreground/5">
               <div className="w-10 h-10 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-400 mb-4">
                 <Palette className="w-5 h-5" />
               </div>
-              <h4 className="font-bold mb-1">Modern UI</h4>
+              <h4 className="font-bold mb-1">Organic Growth</h4>
               <p className="text-sm text-muted-foreground">
-                Crafting beautiful and intuitive interfaces.
+                By Finding Best Keywords And Listing Optimization
               </p>
             </div>
           </div>
 
           <p className="text-center md:text-left text-lg leading-relaxed">
-            My journey started with a curiosity about how the web works, which
-            evolved into a career dedicated to mastering the modern tech stack.
-            I thrive in collaborative environments and am always eager to learn
-            and adapt to emerging technologies.
+            My journey started with a curiosity about how the E-com works, which
+            evolved into a career dedicated to mastering the modern technologies
+            Who to rank Faster and Getting Good Keywords By Using Tool Like:
+            Hulium10, Jungle Scout, Erank, Everbee and Many More. I thrive in
+            collaborative environments and am always eager to learn and adapt to
+            emerging technologies.
           </p>
         </div>
 
@@ -72,12 +76,12 @@ export default function AboutDetail() {
             <div className="absolute bottom-8 left-8 right-8 p-6 glass rounded-2xl border border-foreground/10 backdrop-blur-xl">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-yellow-600 flex items-center justify-center text-black font-bold text-xl">
-                  A
+                  S
                 </div>
                 <div>
                   <h4 className="font-bold">Sadik Khan</h4>
                   <p className="text-xs text-muted-foreground">
-                    Full Stack Engineer
+                    E-commerce Expert
                   </p>
                 </div>
               </div>
