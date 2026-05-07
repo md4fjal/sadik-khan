@@ -4,17 +4,15 @@ import { GraduationCap, Calendar, Award } from "lucide-react";
 
 const educationData = [
   {
-    degree: "Bachelor of Science (BSc)",
-    school: "LBS Collage Jaipur",
-    period: "2019 - 2022",
-    result: "65%",
+    degree: "Bachelor of Technology(B.tech) ",
+    school: "Rajasthan Technical University",
+    period: "2014 - 2018",
     color: "primary",
   },
   {
-    degree: "Master of Computer Application (MCA)",
+    degree: "Master's In Business Administration (MBA)",
     school: "Jaipur National University",
-    period: "2022 - 2024",
-    result: "CGPA: 8.8",
+    period: "2018 - 2020",
     color: "primary",
   },
 ];
@@ -56,10 +54,6 @@ export default function Education() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground font-medium">
                 <Calendar className="w-4 h-4 text-primary" />
                 {item.period}
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground font-medium">
-                <Award className="w-4 h-4 text-primary" />
-                {item.result}
               </div>
             </div>
           </div>

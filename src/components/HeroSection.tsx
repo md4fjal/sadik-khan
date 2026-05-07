@@ -82,15 +82,17 @@ export default function HeroSection() {
             ref={leftContentRef}
             className="flex flex-col items-start justify-center"
           >
-            <h1 className="text-[35px] sm:text-[50px] lg:text-[60px] leading-[1] font-extrabold tracking-[-2px] text-foreground max-w-[700px]">
-              UK Based Expert Amazon Consultants
+            <h1 className="text-[30px] sm:text-[45px] lg:text-[55px] leading-[1] font-bold tracking-[-2px] text-foreground max-w-[700px]">
+              Best E-commerce Growth Strategist For USA And UK Amazon
             </h1>
 
             <p className="mt-8 text-[18px] sm:text-[20px] leading-[1.8] text-muted-foreground max-w-[720px]">
-              Boost your online store with customized strategies for Amazon,
-              Shopify, eBay, Walmart, and more. Drive sales, improve visibility,
-              and achieve lasting growth with expert guidance tailored to your
-              brand.
+              E-commerce Specialist with proven expertise in developing sales
+              strategies and managing Amazon, eBay, Etsy, Temu, and TikTok
+              Seller Centrals. Skilled in product and keyword research, listing
+              creation and optimization, ads management, EBC/A+ Content, brand
+              store creation, data analysis, and sales growth using tools like
+              Helium 10 and Jungle Scout.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 mt-10 w-full sm:w-auto">
@@ -110,9 +112,11 @@ export default function HeroSection() {
             </div>
 
             <p className="mt-14 text-[20px] text-muted-foreground leading-relaxed">
-              Unsure where to begin? Claim your
-              <span className="text-primary font-bold">
-                {" "}
+              Unsure where to begin? Claim your{" "}
+              <span
+                className="text-primary font-bold cursor-pointer hover:underline"
+                onClick={() => scrollToSection("contact")}
+              >
                 FREE listing audit
               </span>{" "}
               today.
@@ -146,7 +150,7 @@ export default function HeroSection() {
 
               <div>
                 <h4 className="text-[20px] font-bold text-foreground leading-none">
-                  275+ Client Engagements
+                  20+ Successful Client
                 </h4>
 
                 <div className="flex items-center gap-3 mt-1 flex-wrap">
@@ -184,12 +188,12 @@ export default function HeroSection() {
 
             <div className="relative z-10">
               <Image
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+                src="/sadik-khan.png"
                 alt="Amazon Consultant"
                 width={620}
                 height={780}
                 priority
-                className="object-contain max-h-[650px] w-full brightness-110 contrast-105"
+                className="object-contain max-h-[700px] w-full brightness-110 contrast-105"
               />
 
               {/* <div className="absolute top-[18%] right-0 bg-transparent text-right">
