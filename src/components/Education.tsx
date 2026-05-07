@@ -36,7 +36,7 @@ export default function Education() {
         {educationData.map((item, idx) => (
           <div
             key={idx}
-            className="group p-8 glass-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-all duration-500"
+            className="group p-8 glass-dark rounded-3xl border border-foreground/5 hover:border-primary/20 transition-all duration-500"
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="p-3 glass rounded-2xl text-primary">

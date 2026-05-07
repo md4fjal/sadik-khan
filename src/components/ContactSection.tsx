@@ -109,7 +109,7 @@ export default function ContactSection() {
       <div className="grid lg:grid-cols-5 gap-12">
         {/* Contact Info */}
         <div className="lg:col-span-2 space-y-6">
-          <div className="p-8 glass-dark rounded-3xl border border-white/5 space-y-8">
+          <div className="p-8 glass-dark rounded-3xl border border-foreground/5 space-y-8">
             <div className="space-y-6">
               <div className="flex items-center gap-4 group">
                 <div className="p-4 glass rounded-2xl text-primary group-hover:scale-110 transition-transform duration-300">
@@ -159,7 +159,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="pt-8 border-t border-white/5">
+            <div className="pt-8 border-t border-foreground/5">
               <p className="text-muted-foreground text-xs font-semibold uppercase tracking-widest mb-4">
                 Social Presence
               </p>
@@ -176,7 +176,7 @@ export default function ContactSection() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 glass rounded-2xl hover:bg-white/10 transition-all hover:-translate-y-2 group"
+                    className="p-4 glass rounded-2xl hover:bg-foreground/10 transition-all hover:-translate-y-2 group"
                     aria-label={social.label}
                   >
                     <span className="group-hover:scale-110 transition-transform block">
@@ -193,7 +193,7 @@ export default function ContactSection() {
         <div className="lg:col-span-3">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="p-8 glass-dark rounded-3xl border border-white/5 space-y-6"
+            className="p-8 glass-dark rounded-3xl border border-foreground/5 space-y-6"
           >
             <div className="grid md:grid-cols-2 gap-6">
               {/* Name Field */}
@@ -208,12 +208,12 @@ export default function ContactSection() {
                   <input
                     {...register("name")}
                     type="text"
-                    className={`w-full px-4 py-4 bg-white/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
+                    className={`w-full px-4 py-4 bg-foreground/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
                       errors.name
                         ? "border-red-500/50 focus:border-red-500 bg-red-500/5"
                         : touchedFields.name
                           ? "border-green-500/30 focus:border-green-500/50"
-                          : "border-white/10 focus:border-primary/50"
+                          : "border-foreground/10 focus:border-primary/50"
                     }`}
                     placeholder="Your name"
                   />
@@ -242,12 +242,12 @@ export default function ContactSection() {
                   <input
                     {...register("email")}
                     type="email"
-                    className={`w-full px-4 py-4 bg-white/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
+                    className={`w-full px-4 py-4 bg-foreground/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
                       errors.email
                         ? "border-red-500/50 focus:border-red-500 bg-red-500/5"
                         : touchedFields.email
                           ? "border-green-500/30 focus:border-green-500/50"
-                          : "border-white/10 focus:border-primary/50"
+                          : "border-foreground/10 focus:border-primary/50"
                     }`}
                     placeholder="hello@example.com"
                   />
@@ -281,12 +281,12 @@ export default function ContactSection() {
                   <input
                     {...register("phone")}
                     type="tel"
-                    className={`w-full px-4 py-4 bg-white/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
+                    className={`w-full px-4 py-4 bg-foreground/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
                       errors.phone
                         ? "border-red-500/50 focus:border-red-500 bg-red-500/5"
                         : touchedFields.phone && phoneValue
                           ? "border-green-500/30 focus:border-green-500/50"
-                          : "border-white/10 focus:border-primary/50"
+                          : "border-foreground/10 focus:border-primary/50"
                     }`}
                     placeholder="+1 (555) 000-0000"
                   />
@@ -315,12 +315,12 @@ export default function ContactSection() {
                   <input
                     {...register("subject")}
                     type="text"
-                    className={`w-full px-4 py-4 bg-white/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
+                    className={`w-full px-4 py-4 bg-foreground/5 border rounded-2xl focus:outline-none transition-all duration-300 ${
                       errors.subject
                         ? "border-red-500/50 focus:border-red-500 bg-red-500/5"
                         : touchedFields.subject
                           ? "border-green-500/30 focus:border-green-500/50"
-                          : "border-white/10 focus:border-primary/50"
+                          : "border-foreground/10 focus:border-primary/50"
                     }`}
                     placeholder="What's this about?"
                   />
@@ -350,12 +350,12 @@ export default function ContactSection() {
                 <textarea
                   {...register("message")}
                   rows={5}
-                  className={`w-full px-4 py-4 bg-white/5 border rounded-2xl focus:outline-none transition-all duration-300 resize-none ${
+                  className={`w-full px-4 py-4 bg-foreground/5 border rounded-2xl focus:outline-none transition-all duration-300 resize-none ${
                     errors.message
                       ? "border-red-500/50 focus:border-red-500 bg-red-500/5"
                       : touchedFields.message
                         ? "border-green-500/30 focus:border-green-500/50"
-                        : "border-white/10 focus:border-primary/50"
+                        : "border-foreground/10 focus:border-primary/50"
                   }`}
                   placeholder="Tell me about your project..."
                 />
@@ -387,7 +387,7 @@ export default function ContactSection() {
                   </>
                 )}
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-shimmer" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent -translate-x-full group-hover:animate-shimmer" />
             </button>
           </form>
         </div>

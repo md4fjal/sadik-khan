@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   "Home",
@@ -53,7 +54,7 @@ export default function Navbar() {
       <div
         className={`max-w-5xl mx-auto transition-all duration-500 rounded-full px-6 py-2 ${
           scrolled
-            ? "glass-dark border-white/10 shadow-2xl shadow-black/50"
+            ? "glass-dark border-foreground/10 shadow-2xl shadow-background/50"
             : "bg-transparent border-transparent"
         } border`}
       >
@@ -73,15 +74,19 @@ export default function Navbar() {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-all rounded-full hover:bg-white/5"
+                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-all rounded-full hover:bg-foreground/5"
               >
                 {item}
               </button>
             ))}
+            <div className="pl-2">
+              <ThemeToggle />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-muted-foreground hover:text-foreground glass rounded-full"
@@ -93,7 +98,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-20 left-4 right-4 glass-dark rounded-3xl p-6 border border-white/10 animate-in fade-in zoom-in duration-300">
+          <div className="md:hidden absolute top-20 left-4 right-4 glass-dark rounded-3xl p-6 border border-foreground/10 animate-in fade-in zoom-in duration-300">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
