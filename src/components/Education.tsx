@@ -8,7 +8,7 @@ const educationData = [
     school: "LBS Collage Jaipur",
     period: "2019 - 2022",
     result: "65%",
-    color: "purple-400",
+    color: "primary",
   },
   {
     degree: "Master of Computer Application (MCA)",

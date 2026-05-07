@@ -109,7 +109,7 @@ export default function Home() {
 
         <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
           <div className="blob-parallax absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full animate-pulse" />
-          <div className="blob-parallax absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/10 blur-[120px] rounded-full" />
+          <div className="blob-parallax absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-yellow-600/10 blur-[120px] rounded-full" />
         </div>
 
         <main className="relative z-10">

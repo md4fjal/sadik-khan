@@ -80,7 +80,7 @@ export default function HeroSection() {
     >
       <div className="absolute inset-0 -z-10">
         <div className="blob absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[80px]" />
-        <div className="blob absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-[100px]" />
+        <div className="blob absolute bottom-1/4 right-1/4 w-80 h-80 bg-yellow-500/10 rounded-full blur-[100px]" />
       </div>
 
       <div className="section-container text-center z-10">

@@ -15,48 +15,48 @@ const services = [
     description:
       "Building high-performance, scalable web applications using React, Next.js, and modern back-end technologies.",
     icon: <Monitor className="w-6 h-6" />,
-    color: "text-blue-400",
-    bg: "bg-blue-400/10",
+    color: "text-yellow-400",
+    bg: "bg-yellow-400/10",
   },
   {
     title: "UI/UX Design",
     description:
       "Creating intuitive and visually stunning user interfaces that provide exceptional user experiences.",
     icon: <Layout className="w-6 h-6" />,
-    color: "text-purple-400",
-    bg: "bg-purple-400/10",
+    color: "text-amber-400",
+    bg: "bg-amber-400/10",
   },
   {
     title: "Mobile Optimization",
     description:
       "Ensuring your applications look and perform beautifully across all devices and screen sizes.",
     icon: <Smartphone className="w-6 h-6" />,
-    color: "text-pink-400",
-    bg: "bg-pink-400/10",
+    color: "text-yellow-500",
+    bg: "bg-yellow-500/10",
   },
   {
     title: "Backend Architecture",
     description:
       "Designing robust server-side systems and database schemas for seamless data management.",
     icon: <Database className="w-6 h-6" />,
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
+    color: "text-amber-500",
+    bg: "bg-amber-500/10",
   },
   {
     title: "Performance Tuning",
     description:
       "Optimizing application speed and reliability through deep technical analysis and best practices.",
     icon: <Cpu className="w-6 h-6" />,
-    color: "text-amber-400",
-    bg: "bg-amber-400/10",
+    color: "text-yellow-300",
+    bg: "bg-yellow-300/10",
   },
   {
     title: "SEO Strategy",
     description:
       "Implementing modern SEO techniques to ensure your digital products are discoverable and rank well.",
     icon: <Search className="w-6 h-6" />,
-    color: "text-cyan-400",
-    bg: "bg-cyan-400/10",
+    color: "text-amber-300",
+    bg: "bg-amber-300/10",
   },
 ];
 

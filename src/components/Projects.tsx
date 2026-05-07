@@ -24,7 +24,7 @@ const projects = [
       "Optimized image delivery",
     ],
     icon: <Zap className="w-6 h-6 text-yellow-400" />,
-    gradient: "from-yellow-500/20 to-orange-500/20",
+    gradient: "from-yellow-500/20 to-amber-500/20",
     links: {
       github: "https://github.com/md4fjal",
       live: "https://ai-gen.example.com",
@@ -41,8 +41,8 @@ const projects = [
       "Secure user portfolios",
       "Price alert system",
     ],
-    icon: <BarChart3 className="w-6 h-6 text-emerald-400" />,
-    gradient: "from-emerald-500/20 to-teal-500/20",
+    icon: <BarChart3 className="w-6 h-6 text-amber-400" />,
+    gradient: "from-amber-500/20 to-yellow-600/20",
     links: {
       github: "https://github.com/md4fjal",
     },
@@ -58,8 +58,8 @@ const projects = [
       "Feature-rich admin dashboard",
       "Order tracking system",
     ],
-    icon: <ShoppingCart className="w-6 h-6 text-purple-400" />,
-    gradient: "from-purple-500/20 to-pink-500/20",
+    icon: <ShoppingCart className="w-6 h-6 text-yellow-500" />,
+    gradient: "from-yellow-500/20 to-amber-600/20",
     links: {
       live: "https://stylehub-plum.vercel.app",
       github: "https://github.com/md4fjal/sw-commerce",
@@ -76,8 +76,8 @@ const projects = [
       "Optimized database queries",
       "Real-time analytics dashboard",
     ],
-    icon: <BarChart3 className="w-6 h-6 text-blue-400" />,
-    gradient: "from-blue-500/20 to-cyan-500/20",
+    icon: <BarChart3 className="w-6 h-6 text-amber-500" />,
+    gradient: "from-amber-500/20 to-yellow-400/20",
     links: {
       github: "https://github.com/md4fjal",
     },

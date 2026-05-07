@@ -32,7 +32,7 @@ export default function AboutDetail() {
               </p>
             </div>
             <div className="p-6 glass-dark rounded-2xl border border-white/5">
-              <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-400 mb-4">
                 <Palette className="w-5 h-5" />
               </div>
               <h4 className="font-bold mb-1">Modern UI</h4>
@@ -52,7 +52,7 @@ export default function AboutDetail() {
 
         <div className="relative">
           <div className="aspect-square glass-dark rounded-[2rem] border border-white/10 overflow-hidden relative group">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-purple-500/20 group-hover:opacity-100 transition-opacity duration-700 opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-yellow-500/20 group-hover:opacity-100 transition-opacity duration-700 opacity-50" />
             <div className="absolute inset-0 flex items-center justify-center p-12">
               {/* Decorative grid or illustration */}
               <div className="grid grid-cols-3 gap-4 w-full h-full opacity-30">
@@ -71,7 +71,7 @@ export default function AboutDetail() {
 
             <div className="absolute bottom-8 left-8 right-8 p-6 glass rounded-2xl border border-white/10 backdrop-blur-xl">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-yellow-600 flex items-center justify-center text-black font-bold text-xl">
                   A
                 </div>
                 <div>
