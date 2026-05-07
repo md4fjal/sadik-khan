@@ -149,7 +149,7 @@ export default function Home() {
         <footer className="py-12 border-t border-white/5 glass-dark text-center">
           <div className="max-w-7xl mx-auto px-4">
             <p className="text-muted-foreground">
-              © {new Date().getFullYear()} Afjal. Full Stack Developer
+              © {new Date().getFullYear()} Sadik Khan. E-commerce Expert
             </p>
           </div>
         </footer>

@@ -6,9 +6,21 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Afjal | Full Stack Developer Portfolio",
+  title: "UK Expert Amazon Consultants | E-commerce Growth Experts",
   description:
-    "Animated portfolio of Afjal, a Full Stack Developer specializing in React, Node.js, and modern web technologies.",
+    "Boost your online store with expert Amazon, Shopify, eBay, and Walmart consulting services. We help brands increase sales, improve visibility, and achieve long-term e-commerce growth with customized strategies.",
+  keywords: [
+    "Amazon consultant",
+    "E-commerce expert",
+    "Shopify consultant",
+    "Amazon growth services",
+    "Walmart marketplace expert",
+    "eBay consulting",
+    "Amazon PPC",
+    "E-commerce marketing",
+    "Amazon seller support",
+    "Online store growth",
+  ],
 };
 
 export default function RootLayout({

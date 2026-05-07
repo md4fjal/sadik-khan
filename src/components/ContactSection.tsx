@@ -97,11 +97,12 @@ export default function ContactSection() {
     <div id="contact" className="scroll-mt-24">
       <div className="mb-16">
         <h2 className="text-center md:text-left text-3xl md:text-5xl font-bold mb-4">
-          Let's <span className="text-gradient">Connect</span>
+          Ready to start your Profitable <br />
+          <span className="text-gradient">Ecommerce Business?</span>
         </h2>
         <p className="text-center md:text-left text-lg max-w-2xl text-muted-foreground">
-          Interested in working together or just want to say hi? My inbox is
-          always open.
+          Book a free consultation call to address your Queries, Gain Clarity,
+          And Best Advice that suits your Unique Needs.
         </p>
       </div>
 
@@ -119,10 +120,10 @@ export default function ContactSection() {
                     Email
                   </p>
                   <a
-                    href="mailto:afjal742000@gmail.com"
+                    href="mailto:sadikusmani028@gmail.com"
                     className="text-lg font-medium hover:text-primary transition-colors"
                   >
-                    afjal742000@gmail.com
+                    sadikusmani028@gmail.com
                   </a>
                 </div>
               </div>
@@ -136,11 +137,11 @@ export default function ContactSection() {
                     Phone
                   </p>
                   <a
-                    href="tel:+919140764560"
+                    href="tel:+916376457760"
                     className="text-lg font-medium hover:text-primary transition-colors"
-                    aria-label="Call +91 9140764560"
+                    aria-label="Call +91 6376457760"
                   >
-                    +91 9140764560
+                    +91 6376457760
                   </a>
                 </div>
               </div>
@@ -165,19 +166,9 @@ export default function ContactSection() {
               <div className="flex gap-4">
                 {[
                   {
-                    icon: <Github className="w-5 h-5" />,
-                    href: "https://github.com/md4fjal",
-                    label: "GitHub",
-                  },
-                  {
                     icon: <Linkedin className="w-5 h-5" />,
-                    href: "https://www.linkedin.com/in/mohammed-afjal-70698a239",
+                    href: "https://www.linkedin.com/in/sadikkhan028",
                     label: "LinkedIn",
-                  },
-                  {
-                    icon: <Instagram className="w-5 h-5" />,
-                    href: "https://www.instagram.com/4fjal/",
-                    label: "Instagram",
                   },
                 ].map((social, i) => (
                   <a

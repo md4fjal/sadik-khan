@@ -75,7 +75,7 @@ export default function AboutDetail() {
                   A
                 </div>
                 <div>
-                  <h4 className="font-bold">Mohammed Afjal</h4>
+                  <h4 className="font-bold">Sadik Khan</h4>
                   <p className="text-xs text-muted-foreground">
                     Full Stack Engineer
                   </p>

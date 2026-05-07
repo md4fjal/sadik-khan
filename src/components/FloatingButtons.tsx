@@ -73,8 +73,8 @@ export default function FloatingButtons() {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = "919140764560";
-    const message = "Hi Afjal, I'm interested in your services.";
+    const phoneNumber = "916376457760";
+    const message = "Hi Sadik, I'm interested in your services.";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };

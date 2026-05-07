@@ -63,7 +63,7 @@ export default function Navbar() {
               className="text-xl font-bold tracking-tighter hover:opacity-80 transition-opacity cursor-pointer"
               onClick={() => scrollToSection("Home")}
             >
-              AFJAL<span className="text-primary">.</span>
+              SADIK<span className="text-primary">.</span>
             </h1>
           </div>
 
