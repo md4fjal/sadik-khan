@@ -1,145 +1,194 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { Sparkles, ArrowDown, ChevronRight } from "lucide-react";
-import Stats from "@/components/Stats";
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLHeadingElement>(null);
-  const subtextRef = useRef<HTMLParagraphElement>(null);
-  const buttonRef = useRef<HTMLDivElement>(null);
-  const statsRef = useRef<HTMLDivElement>(null);
+  const leftContentRef = useRef<HTMLDivElement>(null);
+  const rightImageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
 
       tl.fromTo(
-        textRef.current,
-        { opacity: 0, y: 100, skewY: 7 },
+        leftContentRef.current?.children || [],
+        {
+          opacity: 0,
+          y: 40,
+        },
         {
           opacity: 1,
           y: 0,
-          skewY: 0,
-          duration: 1.2,
+          duration: 0.9,
+          stagger: 0.15,
+          ease: "power3.out",
+        },
+      ).fromTo(
+        rightImageRef.current,
+        {
+          opacity: 0,
+          x: 80,
+          scale: 0.9,
+        },
+        {
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          duration: 1,
           ease: "power4.out",
         },
-      )
-        .fromTo(
-          subtextRef.current,
-          { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.8 },
-          "-=0.6",
-        )
-        .fromTo(
-          buttonRef.current,
-          { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.8 },
-          "-=0.4",
-        )
-        .fromTo(
-          statsRef.current,
-          { opacity: 0, y: 30 },
-          { opacity: 1, y: 0, duration: 0.8 },
-          "-=0.4",
-        );
+        "-=0.7",
+      );
 
-      // Float animation for background blobs
-      gsap.to(".blob", {
-        y: "random(-40, 40)",
-        x: "random(-40, 40)",
-        duration: "random(4, 8)",
+      gsap.to(".hero-wave", {
+        rotate: 4,
+        duration: 4,
         repeat: -1,
         yoyo: true,
         ease: "sine.inOut",
-        stagger: 0.5,
+        transformOrigin: "center",
       });
     }, heroRef);
 
     return () => ctx.revert();
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      if ((window as any).lenis) {
-        (window as any).lenis.scrollTo(element, { offset: -80 });
-      } else {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
-
   return (
     <section
-      id="home"
       ref={heroRef}
-      className="min-h-screen flex items-center justify-center relative overflow-hidden py-20"
+      className="relative overflow-hidden bg-background min-h-screen flex items-center"
     >
-      <div className="absolute inset-0 -z-10">
-        <div className="blob absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[80px]" />
-        <div className="blob absolute bottom-1/4 right-1/4 w-80 h-80 bg-yellow-500/10 rounded-full blur-[100px]" />
-      </div>
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
 
-      <div className="section-container text-center z-10">
-        <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8">
-          <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium text-primary">
-            Open for opportunities
-          </span>
-        </div>
-
-        <div className="overflow-hidden">
-          <h1
-            ref={textRef}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-20 w-full relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div
+            ref={leftContentRef}
+            className="flex flex-col items-start justify-center"
           >
-            Hi, I'm <span className="text-gradient">Afjal</span>
-          </h1>
-        </div>
+            <h1 className="text-[35px] sm:text-[50px] lg:text-[60px] leading-[1] font-extrabold tracking-[-2px] text-foreground max-w-[700px]">
+              UK Based Expert Amazon Consultants
+            </h1>
 
-        <p
-          ref={subtextRef}
-          className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
-        >
-          A Full Stack Developer dedicated to building
-          <span className="text-foreground"> high-performance</span>,
-          <span className="text-foreground"> beautiful</span>, and
-          <span className="text-foreground"> user-centric</span> web
-          applications.
-        </p>
+            <p className="mt-8 text-[18px] sm:text-[20px] leading-[1.8] text-muted-foreground max-w-[720px]">
+              Boost your online store with customized strategies for Amazon,
+              Shopify, eBay, Walmart, and more. Drive sales, improve visibility,
+              and achieve lasting growth with expert guidance tailored to your
+              brand.
+            </p>
 
-        <div
-          ref={buttonRef}
-          className="flex gap-4 justify-center flex-wrap mb-12 md:mb-24"
-        >
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="group px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-all flex items-center gap-2"
+            <div className="flex flex-col sm:flex-row gap-5 mt-10 w-full sm:w-auto">
+              <button className="bg-primary hover:bg-primary/90 transition-all duration-300 text-primary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] shadow-lg shadow-primary/20">
+                Boost Your Amazon Sales
+              </button>
+
+              <button className="bg-secondary hover:bg-secondary/80 transition-all duration-300 text-secondary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] border border-white/10">
+                Fix Your Amazon Issues
+              </button>
+            </div>
+
+            <p className="mt-14 text-[20px] text-muted-foreground leading-relaxed">
+              Unsure where to begin? Claim your
+              <span className="text-primary font-bold">
+                {" "}
+                FREE listing audit
+              </span>{" "}
+              today.
+            </p>
+
+            {/* Engagement Card */}
+            <div className="mt-10 glass-dark rounded-full px-5 py-3 shadow-sm flex items-center gap-4 flex-wrap max-w-fit">
+              <div className="flex -space-x-3">
+                <Image
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="client"
+                  width={50}
+                  height={50}
+                  className="rounded-full border-2 border-background"
+                />
+                <Image
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="client"
+                  width={50}
+                  height={50}
+                  className="rounded-full border-2 border-background"
+                />
+                <Image
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="client"
+                  width={50}
+                  height={50}
+                  className="rounded-full border-2 border-background"
+                />
+              </div>
+
+              <div>
+                <h4 className="text-[20px] font-bold text-foreground leading-none">
+                  275+ Client Engagements
+                </h4>
+
+                <div className="flex items-center gap-3 mt-1 flex-wrap">
+                  <span className="text-[13px] text-muted-foreground font-medium">
+                    & Outcome Delivered
+                  </span>
+
+                  <span className="text-[13px] text-primary font-medium">
+                    4.9 Rating ⭐⭐⭐⭐⭐
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div
+            ref={rightImageRef}
+            className="relative flex justify-center lg:justify-end"
           >
-            View Projects
-            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="px-8 py-4 glass text-foreground rounded-full font-semibold hover:bg-white/10 transition-all"
-          >
-            Get in touch
-          </button>
-        </div>
+            {/* Yellow Wave - Updated to primary color */}
+            <svg
+              className="hero-wave absolute inset-0 w-full h-full scale-[1.25] opacity-60"
+              viewBox="0 0 600 700"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M470 10C560 40 530 120 430 170C300 235 180 300 180 390C180 480 320 500 430 510C550 520 610 590 560 670"
+                stroke="hsl(47.9 95.8% 53.1%)"
+                strokeWidth="38"
+                strokeLinecap="round"
+              />
+            </svg>
 
-        <div ref={statsRef}>
-          <Stats />
-        </div>
-      </div>
+            <div className="relative z-10">
+              <Image
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+                alt="Amazon Consultant"
+                width={620}
+                height={780}
+                priority
+                className="object-contain max-h-[780px] w-full brightness-110 contrast-105"
+              />
 
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
-        <span className="text-xs uppercase tracking-widest font-medium">
-          Scroll
-        </span>
-        <ArrowDown className="w-4 h-4 animate-bounce" />
+              {/* <div className="absolute top-[18%] right-0 bg-transparent text-right">
+                <p className="text-[18px] text-muted-foreground uppercase leading-none">
+                  ASH CEO
+                </p>
+
+                <h3 className="text-[34px] font-bold text-foreground leading-tight mt-1">
+                  UK Expert Amazon
+                </h3>
+
+                <div className="w-full h-[2px] bg-primary mt-3" />
+              </div> */}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
