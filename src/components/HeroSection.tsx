@@ -56,6 +56,17 @@ export default function HeroSection() {
     return () => ctx.revert();
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      if ((window as any).lenis) {
+        (window as any).lenis.scrollTo(element, { offset: -80 });
+      } else {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <section
       ref={heroRef}
@@ -83,11 +94,17 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 mt-10 w-full sm:w-auto">
-              <button className="bg-primary hover:bg-primary/90 transition-all duration-300 text-primary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] shadow-lg shadow-primary/20">
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="bg-primary hover:bg-primary/90 transition-all duration-300 text-primary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] shadow-lg shadow-primary/20"
+              >
                 Boost Your Amazon Sales
               </button>
 
-              <button className="bg-secondary hover:bg-secondary/80 transition-all duration-300 text-secondary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] border border-foreground/10">
+              <button
+                className="bg-secondary hover:bg-secondary/80 transition-all duration-300 text-secondary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] border border-foreground/10"
+                onClick={() => scrollToSection("contact")}
+              >
                 Fix Your Amazon Issues
               </button>
             </div>
@@ -172,7 +189,7 @@ export default function HeroSection() {
                 width={620}
                 height={780}
                 priority
-                className="object-contain max-h-[780px] w-full brightness-110 contrast-105"
+                className="object-contain max-h-[650px] w-full brightness-110 contrast-105"
               />
 
               {/* <div className="absolute top-[18%] right-0 bg-transparent text-right">
