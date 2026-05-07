@@ -49,14 +49,14 @@ export default function WorkExperience() {
         </p>
       </div>
 
-      <div className="relative space-y-12 md:space-y-24 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+      <div className="relative space-y-12 md:space-y-24 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-foreground/10 before:to-transparent">
         {/* Experience 1 */}
         <div className="exp-card relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-background group-hover:border-primary/50 transition-colors duration-500 z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-foreground/10 bg-background group-hover:border-primary/50 transition-colors duration-500 z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
             <Circle className="w-2 h-2 fill-primary text-primary" />
           </div>
 
-          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 glass-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-all duration-500">
+          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 glass-dark rounded-3xl border border-foreground/5 hover:border-primary/20 transition-all duration-500">
             <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
               <div className="flex items-center gap-3">
                 <div className="p-2 glass rounded-xl text-primary">
@@ -95,11 +95,11 @@ export default function WorkExperience() {
 
         {/* Experience 2 */}
         <div className="exp-card relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-background group-hover:border-primary/50 transition-colors duration-500 z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-foreground/10 bg-background group-hover:border-primary/50 transition-colors duration-500 z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
             <Circle className="w-2 h-2 fill-primary text-primary" />
           </div>
 
-          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 glass-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-all duration-500">
+          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 glass-dark rounded-3xl border border-foreground/5 hover:border-primary/20 transition-all duration-500">
             <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
               <div className="flex items-center gap-3">
                 <div className="p-2 glass rounded-xl text-primary">
@@ -138,11 +138,11 @@ export default function WorkExperience() {
 
         {/* Experience 3 */}
         <div className="exp-card relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-background group-hover:border-primary/50 transition-colors duration-500 z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+          <div className="flex items-center justify-center w-10 h-10 rounded-full border border-foreground/10 bg-background group-hover:border-primary/50 transition-colors duration-500 z-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
             <Circle className="w-2 h-2 fill-primary text-primary" />
           </div>
 
-          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 glass-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-all duration-500">
+          <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 glass-dark rounded-3xl border border-foreground/5 hover:border-primary/20 transition-all duration-500">
             <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
               <div className="flex items-center gap-3">
                 <div className="p-2 glass rounded-xl text-primary">

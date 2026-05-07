@@ -87,7 +87,7 @@ export default function HeroSection() {
                 Boost Your Amazon Sales
               </button>
 
-              <button className="bg-secondary hover:bg-secondary/80 transition-all duration-300 text-secondary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] border border-white/10">
+              <button className="bg-secondary hover:bg-secondary/80 transition-all duration-300 text-secondary-foreground font-bold text-[18px] px-10 py-5 rounded-full min-w-[280px] border border-foreground/10">
                 Fix Your Amazon Issues
               </button>
             </div>

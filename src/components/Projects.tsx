@@ -115,7 +115,7 @@ export default function Projects() {
               <div className="h-[400px] w-full glass-dark rounded-3xl" />
             }
           >
-            <div className="group relative flex flex-col h-full glass-dark rounded-3xl border border-white/5 hover:border-primary/20 transition-all duration-500 overflow-hidden">
+            <div className="group relative flex flex-col h-full glass-dark rounded-3xl border border-foreground/5 hover:border-primary/20 transition-all duration-500 overflow-hidden">
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
               />
@@ -128,7 +128,7 @@ export default function Projects() {
                       <a
                         href={project.links.github}
                         target="_blank"
-                        className="p-2 glass rounded-full hover:bg-white/10 transition-colors"
+                        className="p-2 glass rounded-full hover:bg-foreground/10 transition-colors"
                       >
                         <Github className="w-5 h-5" />
                       </a>
@@ -137,7 +137,7 @@ export default function Projects() {
                       <a
                         href={project.links.live}
                         target="_blank"
-                        className="p-2 glass rounded-full hover:bg-white/10 transition-colors"
+                        className="p-2 glass rounded-full hover:bg-foreground/10 transition-colors"
                       >
                         <ExternalLink className="w-5 h-5" />
                       </a>
@@ -156,14 +156,14 @@ export default function Projects() {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-xs font-medium glass rounded-full border border-white/5"
+                      className="px-3 py-1 text-xs font-medium glass rounded-full border border-foreground/5"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="mt-auto pt-6 border-t border-white/5">
+                <div className="mt-auto pt-6 border-t border-foreground/5">
                   <ul className="space-y-2 mb-6">
                     {project.features.slice(0, 2).map((feature, i) => (
                       <li

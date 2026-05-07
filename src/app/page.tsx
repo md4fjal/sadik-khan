@@ -146,7 +146,7 @@ export default function Home() {
           </div>
         </main>
 
-        <footer className="py-12 border-t border-white/5 glass-dark text-center">
+        <footer className="py-12 border-t border-foreground/5 glass-dark text-center">
           <div className="max-w-7xl mx-auto px-4">
             <p className="text-muted-foreground">
               © {new Date().getFullYear()} Sadik Khan. E-commerce Expert
