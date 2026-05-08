@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Store,
   LayoutDashboard,
@@ -27,8 +28,7 @@ const services = [
     ],
     color: "text-yellow-400",
     bg: "bg-yellow-400/10",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+    image: "/e-commerce-account-setup.png",
   },
   {
     title: "Account Management",
@@ -43,8 +43,7 @@ const services = [
     ],
     color: "text-amber-400",
     bg: "bg-amber-400/10",
-    image:
-      "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1200&auto=format&fit=crop",
+    image: "/account-management.png",
   },
   {
     title: "Image Designing",
@@ -59,8 +58,7 @@ const services = [
     ],
     color: "text-yellow-500",
     bg: "bg-yellow-500/10",
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
+    image: "/image-designing.png",
   },
   {
     title: "Order Management",
@@ -75,8 +73,7 @@ const services = [
     ],
     color: "text-amber-500",
     bg: "bg-amber-500/10",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
+    image: "/order-management.png",
   },
   {
     title: "PPC & Promotions",
@@ -91,8 +88,7 @@ const services = [
     ],
     color: "text-yellow-300",
     bg: "bg-yellow-300/10",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+    image: "/ppc.png",
   },
   {
     title: "Product Listing Creation & Optimization",
@@ -107,8 +103,7 @@ const services = [
     ],
     color: "text-amber-300",
     bg: "bg-amber-300/10",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    image: "/product-listing.png",
   },
   {
     title: "Product Research",
@@ -123,12 +118,13 @@ const services = [
     ],
     color: "text-yellow-400",
     bg: "bg-yellow-400/10",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    image: "/product-research.png",
   },
 ];
 
 export default function Services() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -139,6 +135,13 @@ export default function Services() {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     arrows: false,
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setCurrentSlide(newIndex);
+    },
+  };
+
+  const goToSlide = (index: number) => {
+    console.log("Go to slide:", index);
   };
 
   return (
@@ -177,8 +180,8 @@ export default function Services() {
                     </p>
 
                     <div className="space-y-4">
-                      {service.points.map((point, index) => (
-                        <div className="flex gap-3" key={index}>
+                      {service.points.map((point, idx) => (
+                        <div className="flex gap-3" key={idx}>
                           <span className="text-yellow-400">✓</span>
                           <p className="text-muted-foreground">{point}</p>
                         </div>
@@ -198,7 +201,7 @@ export default function Services() {
                       <img
                         src={service.image}
                         alt={service.title}
-                        className="w-full h-[260px] md:h-[380px] object-cover rounded-[20px]"
+                        className="w-full h-auto object-contain rounded-[20px]"
                       />
                     </div>
                   </div>
@@ -209,9 +212,25 @@ export default function Services() {
         </Slider>
       </div>
 
+      {/* Custom Navigation Dots */}
+      <div className="flex justify-center gap-3 mt-8">
+        {services.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`transition-all duration-300 rounded-full ${
+              currentSlide === index
+                ? "w-8 bg-yellow-400 h-2"
+                : "w-2 bg-foreground/30 hover:bg-foreground/50 h-2"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+
       <style jsx global>{`
         .slider-container .slick-slide {
-          padding-bottom: 50px;
+          padding-bottom: 20px;
         }
       `}</style>
     </div>
